@@ -4,7 +4,8 @@
   "description": "Seed for React Jest Gulp Project",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "jspm install"
   },
   "jest": {
     "scriptPreprocessor": "./preprocessor.js",
@@ -46,8 +47,5 @@
       "babel-runtime": "npm:babel-runtime@^5.1.13",
       "core-js": "npm:core-js@^0.9.4"
     }
-  },
-  "scripts": {
-    "postinstall": "jspm install"
   }
 }

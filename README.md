@@ -4,6 +4,15 @@ Seed project for writing ReactJS components in TDD fashion. This seed uses Jest 
 
 **Note:** We use System.js ( comes with JSPM ) for module loading.
 
+## Install
+
+Clone this repo and run npm install
+```
+git clone git@github.com:shidhincr/react-jest-gulp-jspm-seed.git
+
+npm install
+```
+
 ## Usage 
 
 There are two main gulp tasks. Run both tasks in two different terminal tabs, so that you can develop the component in TDD way.
