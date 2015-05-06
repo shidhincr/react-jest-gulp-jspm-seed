@@ -1,0 +1,50 @@
+{
+  "name": "react-jest-gulp-seed",
+  "version": "1.0.0",
+  "description": "Seed for React Jest Gulp Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "./preprocessor.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/jspm_packages"
+    ],
+    "unmockedModulePathPatterns": [
+      "./node_modules/react"
+    ]
+  },
+  "author": "Shidhin CR <shidhincr@gmail.com> (http://www.undefinednull.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-filter": "^2.0.2",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-react": "^3.0.1",
+    "gulp-shell": "^0.4.1",
+    "harmonize": "^1.4.1",
+    "jest-cli": "^0.4.1",
+    "jspm": "^0.15.5",
+    "react": "^0.13.2",
+    "react-tools": "^0.13.2",
+    "run-sequence": "^1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.1",
+    "gulp": "^3.8.11"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "react": "npm:react@^0.13.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}
