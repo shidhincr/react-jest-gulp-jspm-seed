@@ -44,7 +44,8 @@
   "jspm": {
     "directories": {},
     "dependencies": {
-      "react": "npm:react@^0.14"
+      "react": "npm:react@0.14.2",
+      "react-dom": "npm:react-dom@0.14.2"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.1.13",
