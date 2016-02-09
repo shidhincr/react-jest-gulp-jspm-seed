@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react/addons');
+var React = require('react');
 var CheckboxWithLabel = React.createClass({
   getInitialState: function() {
     return { isChecked: false };

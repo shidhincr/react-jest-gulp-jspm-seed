@@ -1,24 +1,29 @@
-jest.dontMock('../scripts/testComponent.js');
-describe('CheckboxWithLabel', function() {
-  it('changes the text after click', function() {
-    var React = require('react/addons');
-    var CheckboxWithLabel = require('../scripts/testComponent.js');
-    var TestUtils = React.addons.TestUtils;
+jest.dontMock('../scripts/testComponent');
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+var TestUtils = require('react-addons-test-utils');
+var CheckboxWithLabel = require('../scripts/testComponent');
+
+describe('CheckboxWithLabel', () => {
+
+  it('changes the text after click', () => {
 
     // Render a checkbox with label in the document
     var checkbox = TestUtils.renderIntoDocument(
-      <CheckboxWithLabel labelOn="On" labelOff="Off" />
+      <CheckboxWithLabel labelOn="On" labelOff="Off"/>
     );
 
+    var checkboxNode = ReactDOM.findDOMNode(checkbox);
+
     // Verify that it's Off by default
-    var label = TestUtils.findRenderedDOMComponentWithTag(
-      checkbox, 'label');
-    expect(label.getDOMNode().textContent).toEqual('Off');
+    expect(checkboxNode.textContent).toEqual('Off');
 
     // Simulate a click and verify that it is now On
-    var input = TestUtils.findRenderedDOMComponentWithTag(
-      checkbox, 'input');
-    TestUtils.Simulate.change(input);
-    expect(label.getDOMNode().textContent).toEqual('On');
+    TestUtils.Simulate.change(
+      TestUtils.findRenderedDOMComponentWithTag(checkbox, 'input')
+    );
+    expect(checkboxNode.textContent).toEqual('On');
   });
+
 });
