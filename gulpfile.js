@@ -35,7 +35,7 @@ gulp.task('serve', function () {
     }
   });
 
-  gulp.watch(['scripts/*.js', '*.html'], ['watch-source']);
+  gulp.watch(['app.js', 'scripts/*.js', '*.html'], ['watch-source']);
 
 });
 
