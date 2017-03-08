@@ -1,5 +1,7 @@
 # ReactJS + JEST + GULP + JSPM - Seed
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/shidhincr/react-jest-gulp-jspm-seed.svg)](https://greenkeeper.io/)
+
 Seed project for writing ReactJS components in TDD fashion. This seed uses Jest for unit testing, Gulp for building and JSPM as the browser package manager.
 
 **Note:** We use System.js ( comes with JSPM ) for module loading.
